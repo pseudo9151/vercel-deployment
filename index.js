@@ -7,7 +7,7 @@ let count = 0;
 app.use(express.json());
 app.get("/", (req, res) => {
   count++;
-  if (count <= 5) {
+  if (count <= 13) {
     return res.json({ status: true });
   } else {
     return res.json({ status: false });
